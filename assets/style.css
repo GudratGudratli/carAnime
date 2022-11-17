@@ -1,0 +1,83 @@
+/* .box{
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    animation-name: myanim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-top: 300px;
+}
+
+@keyframes myanim{
+    0%{
+        background-color: red;
+    }
+    100%{
+        background-color: blue;
+        transform: translateX(700px) rotate(180deg) scale(1.8);
+        border-radius: 50%;
+    }
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    position: relative;
+}
+
+.bg1{
+    position: absolute;
+    margin-right: 1500px;
+}
+
+.bg{
+    top: 100px;
+    position: absolute;
+    width: 100%;
+    animation-name: bgAnim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-size: repeat;
+}
+
+.whell{
+    transform: scale(0.08);
+    animation-name: whellAnim;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+.whell1{
+    margin-top: -1675px;
+    margin-left: -265px;
+}
+.whell2{
+    margin-top: -2485px;
+    margin-left: -835px;
+}
+
+
+@keyframes whellAnim{
+    0%{
+        transform: rotate(1000deg) scale(0.08);
+    }
+    100%{
+        transform: rotate(0deg) scale(0.08);
+    }
+}
+
+@keyframes bgAnim{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(1920px);
+    }
+}
+    
